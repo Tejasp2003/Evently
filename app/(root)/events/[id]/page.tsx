@@ -1,4 +1,5 @@
 import { getEventById } from "@/lib/actions/event.actions";
+import { formatDateTime } from "@/lib/utils";
 import { SearchParamProps } from "@/types";
 import Image from "next/image";
 import React from "react";
@@ -41,7 +42,7 @@ const EventDetailsPage = async ({ params: { id } }: SearchParamProps) => {
               </div>
             </div>
 
-            <CheckoutButton event={event} />
+            {/* <CheckoutButton event={event} /> */}
 
             <div className="flex flex-col gap-5">
               <div className="flex gap-2 md:gap-3">
